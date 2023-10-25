@@ -16,12 +16,12 @@ body *{
 
 #container{
     width: 360px;
-    border: 1px solid red;
-    margin: auto;
+    margin: 56px auto 0px;
 }
 
 #profile{
     text-align: center;
+    padding: 24px;
 }
 
 #profile img{
@@ -32,5 +32,32 @@ width: 112px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px; 
+}
 
+/* Configurações dos links */
+
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li a{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
 }
